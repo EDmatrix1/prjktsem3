@@ -24,6 +24,10 @@ public class Sale {
         return soldItem.getInfo() + "\n" + getRunningTotal();
     }
 
+    public Map<String, SoldItem> getSoldItems() {
+        return items;
+    }
+
     public String displayTotal() {
         return "Total cost (incl VAT): " + String.format("%.2f", getTotalCost()) +
                " SEK\nTotal VAT: " + String.format("%.2f", getTotalVAT()) + " SEK";

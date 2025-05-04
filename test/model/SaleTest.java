@@ -18,7 +18,9 @@ class SaleTest {
     void testAddItem() {
         sale.addItem("abc123");
         sale.addItem("abc123");
-        assertTrue(sale.displayTotal().contains("59.80 SEK"));
+        
+        SoldItem soldItem = sale.getSoldItems().get("abc123");
+        assertEquals(2, soldItem.getQuantity);
     }
 
     @Test

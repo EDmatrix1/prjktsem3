@@ -15,6 +15,10 @@ public class SoldItem {
         quantity++;
     }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
     public String getInfo() {
         return String.format("Item: %s, Cost: %.2f SEK, VAT: %.0f%%, Qty: %d",
                 item.getName(), item.getPrice(), item.getVAT() * 100, quantity);
