@@ -20,7 +20,7 @@ class SaleTest {
         sale.addItem("abc123");
         
         SoldItem soldItem = sale.getSoldItems().get("abc123");
-        assertEquals(2, soldItem.getQuantity);
+        assertEquals(2, soldItem.getQuantity());;
     }
 
     @Test
