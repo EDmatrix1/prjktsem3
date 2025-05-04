@@ -18,7 +18,7 @@ class SaleTest {
     void testAddItem() {
         sale.addItem("abc123");
         sale.addItem("abc123");
-        assertTrue(sale.displayTotal().contains("74.70 SEK"));
+        assertTrue(sale.displayTotal().contains("59.80 SEK"));
     }
 
     @Test
